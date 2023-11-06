@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- styles -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Mi muro</title>
+</head>
+
+<body>
+    <!-- Logo y instagram -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://svgsilh.com/svg_v2/1562139.svg" alt="" width="30" height="24"
+                    class="d-inline-block align-text-top">
+                Instagram
+            </a>
+            <!-- Div B.Verde+B.Dropdown -->
+            <div class="2 botones">
+                <!-- Boton principal verde -->
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Create a new post</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <!-- Box de comentario como agrandar el tamaño del box?-->
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Caption:</label>
+                                        <input type="text" class="form-control" id="recipient-name"
+                                            placeholder="Add the caption of your post here">
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- boton de camara y ubicacion, como separar los iconos y alinearlos?-->
+                            <div class="buttons"></div>
+                            <div class="camara/ubicacion">
+                                <button type="button" class="btn btn-light btn-sm col-1 border border-light">
+                                    <i class="fa-solid fa-camera" style="color: #000000;"></i>
+                                    <button type="button" class="btn btn-light btn-sm col-1 border border-light">
+                                        <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
+                            </div>
+                            </button>
+                            <!-- Botones inferiores con borde superior -->
+                            <!-- Consultar como aumentar el grosor del span, no resulto el border-5 o border-top border-5 -->
+                            <div class="modal-footer">
+                                <span class="border-top"></span>
+                                <button type="button" class="btn btn-secondary">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Boton dropdown, porque tiene borde??/ cambiarle la dirección de bajada a la izquierda/ cambiar color a rojo en log out?  no aparece el gear en el boton-->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--como modificar el tamaño de las imagenes?/modificar el tamaño de likes y titulo, modificar margenes de distintas-->
+    <div class="card" style="width: 35rem; height: 35rem; margin: auto;">
+        <div class="card-header ">
+            <h4 class="titulo">My Crazy dog Spark!</h4>
+        </div>
+        <div class="numeracion">
+            <p>08/26</p>
+        </div>
+        <img src="https://blobcore.pulsoslp.com.mx/images/2023/10/26/malvado-focus-0-0-840-600.jpg" class="card-img-top"
+            alt="X">
+        <div class="card-body">
+            <h5 class="card-title">204 Likes</h5>
+            <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+        </div>
+    </div>
+
+    <!--como modificar el tamaño de las imagenes?/modificar el tamaño de likes y titulo, modificar margenes de distintas-->
+    <div class="card" style="width: 35rem; height: 35rem; margin: auto;">
+        <div class="card-header ">
+            <h4 class="titulo">The greatness of Croatia</h4>
+        </div>
+        <div class="numeracion">
+            <p>04/09</p>
+        </div>
+        <img src="https://thumbs.dreamstime.com/b/lagos-parque-nacional-croatia-plitvice-27382516.jpg"
+            class="card-img-top" alt="Y">
+        <div class="card-body">
+            <h5 class="card-title">26985 Likes</h5>
+            <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+        </div>
+    </div>
+
+    <!--como modificar el tamaño de las imagenes?/modificar el tamaño de likes y titulo, modificar margenes de distintas-->
+    <div class="card" style="width: 35rem; height: 35rem; margin: auto;">
+        <div class="card-header ">
+            <h4 class="titulo">Amazing GOAL by Cristiano!</h4>
+        </div>
+        <div class="numeracion">
+            <p>06/10</p>
+        </div>
+        <img src="https://www.clarin.com/2018/04/04/Hkl_trMif_720x0__1.jpg" class="card-img-top" alt="Y">
+        <div class="card-body">
+            <h5 class="card-title">26985 Likes</h5>
+            <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
