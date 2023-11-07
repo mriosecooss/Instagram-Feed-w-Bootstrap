@@ -41,106 +41,102 @@
                                         aria-label="Close"></button>
                                 </div>
 
-                                <!-- Box de comentario como agrandar el tamaño del box?-->
+                                <!-- Box de comentario -->
                                 <div class="modal-body">
                                     <form>
-                                        <div class="mb-3">
+                                        <div class="mb-3" style="height: 75px;">
                                             <label for="recipient-name" class="col-form-label">Caption:</label>
-                                            <input type="text" class="form-control" id="recipient-name"
-                                                placeholder="Add the caption of your post here">
+                                            <textarea
+                                                class="form-control h-65 text-secondary">Add the caption of your post here</textarea>
                                         </div>
                                     </form>
                                 </div>
 
-                                <!-- boton de camara y ubicacion, como separar los iconos y alinearlos?-->
+                                <!-- boton de camara y ubicacion -->
                                 <div class="buttons"></div>
-                                <div class="camara/ubicacion">
-                                    <button type="button" class="btn btn-light btn-sm col-1 border border-light">
+                                <div class="camara/ubicacion ps-3 pb-4 pt-1">
+                                    <button type="button" class="btn btn-light btn-sm col-1 border border-1">
                                         <i class="fa-solid fa-camera" style="color: #000000;"></i>
-                                        <button type="button" class="btn btn-light btn-sm col-1 border border-light">
-                                            <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light btn-sm col-1 border border-1">
+                                        <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
+                                    </button>
                                 </div>
-                                </button>
 
-                                <!-- Botones inferiores con borde superior -->
-                                <!-- Consultar como aumentar el grosor del span, no resulto el border-5 o border-top border-5 -->
-                                <div class="modal-footer">
-                                    <span class="border-top"></span>
-                                    <button type="button" class="btn btn-secondary">Close</button>
+                                <!-- Botones inferiores -->
+                                <div
+                                    class="modal-footer border border-secondary border-top-1px border-bottom-0 border-start-0 border-end-0">
+                                    <button type="button" class="btn btn-secondary border">Close</button>
                                     <button type="button" class="btn btn-success">Publish</button>
                                 </div>
+
                             </div>
                         </div>
                     </div>
 
-                    <!-- Boton dropdown, porque tiene borde??/ cambiarle la dirección de bajada a la izquierda/ cambiar color a rojo en log out? -->
-                    <div class="btn-group">
+                    <!-- Boton dropdown -->
+                    <div class="btn-group dropdown-end">
                         <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <i class="fa-solid fa-gear" style="color: #ffffff;"></i>
                         </button>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="#">Profile</a></li>
                             <li><a class="dropdown-item" href="#">Accesibility</a></li>
                             <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Log Out</a></li>
+                            <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
                         </ul>
                     </div>
+
                 </div>
             </div>
         </nav>
 
         <!-- Cambio de pagina -->
-        <nav aria-label="Page navigation example" class="margen">
+        <nav aria-label="Page navigation example" class="margen pt-">
             <ul class="pagination justify-content-center">
-                <li class="page-item"><a class="page-link text-secondary" href="index.html">
+                <li class="page-item"><a class="page-link text-primary border border-0" href="index.html">
                         <i class="fas fa-th"></i></a>
                 </li>
-                <li class="page-item"><a class="page-link text-secondary" href="Feed.html">■</a></li>
+                <li class="page-item"><a class="page-link text-secondary border border-0" href="Feed.html">■</a></li>
             </ul>
         </nav>
 
-        <!-- ROW 1 IMAGENES, NO ENCONTRE LA FORMA DE SEPARAR LOS ROWS 1 2 3 IMAGENES MUY GRANDES-->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-4 xs">
-                    <img src="https://matematicasvedicas.org/wp-content/uploads/dhruv-deshmukh-266273.jpg">
-                </div>
-                <div class="col-4 xs">
-                    <img src="https://matematicasvedicas.org/wp-content/uploads/dhruv-deshmukh-266273.jpg">
-                </div>
-                <div class="col-4 xs">
-                    <img src="https://matematicasvedicas.org/wp-content/uploads/dhruv-deshmukh-266273.jpg">
-                </div>
+        <!--NO PUDE RESOLVER COMO PONERLE TAMANO A LOS DIVS PARA QUE CADA IMAGEN SEA CUADRADA-->
+        <div class="row row-cols-3">
+            <div class="col-md-6 col-sm-12 col-xl-4 pb-1 pt-1 ps-1 pe-1">
+                <img src="https://i.pinimg.com/564x/fa/54/55/fa5455433a1c7551d1a52ec8942ffb47.jpg" class="w-100">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xl-4 pb-1 pt-1 ps-1 pe-1">
+                <img src="https://i.pinimg.com/564x/07/cd/68/07cd685fb68e77f15b537e1af117e528.jpg" class="w-100">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xl-4 pb-1 pt-1 ps-1 pe-1">
+                <img src="https://i.pinimg.com/564x/00/7e/7b/007e7bc46a8f6ad318a79be63e6abfe9.jpg" class="w-100">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xl-4 pb-1 pt-1 ps-1 pe-1">
+                <img src="https://i.pinimg.com/564x/1d/b1/05/1db105469c4a95bd781878ac0e49a8fd.jpg" class="w-100">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xl-4 pb-1 pt-1 ps-1 pe-1">
+                <img src="https://i.pinimg.com/564x/96/8b/c2/968bc2601c75f6f85b7a603059ad446b.jpg" class="w-100">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xl-4 pb-1 pt-1 ps-1 pe-1">
+                <img src="https://i.pinimg.com/564x/4e/f0/9e/4ef09edcbcc75bad40ecd8049401dcd9.jpg" class="w-100">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xl-4 pb-1 pt-1 ps-1 pe-1">
+                <img src="https://i.pinimg.com/564x/4f/60/61/4f60614fd219c0453af0968e0cf75246.jpg" class="w-100">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xl-4 pb-1 pt-1 ps-1 pe-1">
+                <img src="https://i.pinimg.com/564x/d0/ee/d2/d0eed246688b19d63e88aca988177aa9.jpg" class="w-100">
+            </div>
+            <div class="col-md-6 col-sm-12 col-xl-4 pb-1 pt-1 ps-1 pe-1">
+                <img src="https://i.pinimg.com/564x/ab/d7/6f/abd76ff91a1d6fae59b57577d15b74fb.jpg" class="w-100">
             </div>
         </div>
-        <!-- ROW 2 IMAGENES, NO ENCONTRE LA FORMA DE SEPARAR LOS ROWS 1 2 3 IMAGENES MUY GRANDES -->
-        <div class="row">
-            <div class="col-4 xs">
-                <img src="https://matematicasvedicas.org/wp-content/uploads/dhruv-deshmukh-266273.jpg">
-            </div>
-            <div class="col-4 xs">
-                <img src="https://matematicasvedicas.org/wp-content/uploads/dhruv-deshmukh-266273.jpg">
-            </div>
-            <div class="col-4 xs">
-                <img src="https://matematicasvedicas.org/wp-content/uploads/dhruv-deshmukh-266273.jpg">
-            </div>
-        </div>
-        <!-- ROW 1 IMAGENES, NO ENCONTRE LA FORMA DE SEPARAR LOS ROWS 1 2 3 IMAGENES MUY GRANDES -->
-        <div class="row">
-            <div class="col-4 xs">
-                <img src="https://matematicasvedicas.org/wp-content/uploads/dhruv-deshmukh-266273.jpg">
-            </div>
-            <div class="col-4 xs">
-                <img src="https://matematicasvedicas.org/wp-content/uploads/dhruv-deshmukh-266273.jpg">
-            </div>
-            <div class="col-4 xs">
-                <img src="https://matematicasvedicas.org/wp-content/uploads/dhruv-deshmukh-266273.jpg">
-            </div>
-        </div>
+
+
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
