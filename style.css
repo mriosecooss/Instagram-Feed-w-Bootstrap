@@ -1,7 +1,31 @@
-.photo {
+.img-fluid {
     width: 100%;
-    height: 450px;
+    height: 150px;
     object-fit: cover;
     object-position: top left;
-    border: 1px solid red;
+
+}
+
+.img-fluid3 {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.img-fluid2 {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.img-fluid1 {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: left;
+
 }
